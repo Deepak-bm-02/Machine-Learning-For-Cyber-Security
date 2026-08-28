@@ -1,63 +1,78 @@
-# Machine-Learning-For-Cyber-Security
-README – Experiment 1
-Title
+# Cybersecurity and Machine Learning Experiments
 
-Time Series Analysis of Historical Network Traffic Data
+This repository contains three practical experiments based on **Time Series Analysis, DDoS Attack Prediction, and Malicious URL Detection** using Python.
 
-Objective
+## Experiments
 
-To analyze historical network traffic data using time series analysis techniques and identify trends, seasonality, and traffic patterns.
+### Experiment 1: Time Series Decomposition
 
-Dataset
-File: output1.csv
-Data Type: Historical Network Traffic
-Main Feature: Timestamp
-Tools Used
-Python
-Pandas
-Matplotlib
-Statsmodels
-Workflow
-Load the dataset.
-Convert Unix timestamps to date-time format.
-Sort data by timestamp.
-Perform seasonal decomposition.
-Visualize trend, seasonality, and residual components.
-Output
-Time series plot
-Trend component
-Seasonal component
-Residual analysis
-README – Experiment 2
-Title
+**Aim:**
+To decompose a time series dataset into trend, seasonal, and residual components.
 
-Predicting Potential DDoS Attacks Using ARIMA Time Series Forecasting
+**Methods Used:**
 
-Objective
+* Time Series Decomposition
+* Trend Analysis
+* Seasonal Analysis
 
-To forecast future DDoS attack patterns using the ARIMA model on the CICIDS2017 dataset.
+**Tools:**
 
-Dataset
-File: DDoS Attack Dataset.csv
-Dataset: CICIDS2017
-Target: DDoS Attack Prediction
-Tools Used
-Python
-Pandas
-Matplotlib
-Statsmodels (ARIMA)
-Workflow
-Load the dataset.
-Convert timestamps.
-Create a binary attack column (BENIGN = 0, Attack = 1).
-Aggregate attack counts by minute.
-Split the data into training and testing sets.
-Train the ARIMA model.
-Forecast future attacks.
-Compare actual and predicted values.
-Evaluate the model using RMSE.
-Output
-Historical attack count graph
-Forecast graph
-Predicted attack values
-RMSE evaluation metric
+* Python
+* Pandas
+* Matplotlib
+* Statsmodels
+
+**Result:**
+The dataset was successfully decomposed into trend, seasonal, and residual components.
+
+---
+
+### Experiment 2: DDoS Attack Prediction Using Time Series Forecasting
+
+**Aim:**
+To analyze historical network traffic and forecast potential DDoS attack periods.
+
+**Methods Used:**
+
+* Time Series Analysis
+* ARIMA Forecasting
+* Network Traffic Analysis
+
+**Tools:**
+
+* Python
+* Pandas
+* Matplotlib
+* Statsmodels
+
+**Result:**
+Network traffic was forecasted and abnormal traffic spikes were identified as potential DDoS attack periods.
+
+---
+
+### Experiment 4: Malicious URL Classification Using Logistic Regression
+
+**Aim:**
+To classify URLs as legitimate or malicious using Logistic Regression.
+
+**Dataset:**
+
+* 388,447 URLs
+* `0` → Legitimate
+* `1` → Malicious
+
+**Methods Used:**
+
+* Data Preprocessing
+* TF-IDF Feature Extraction
+* Logistic Regression
+* Classification Evaluation
+
+**Tools:**
+
+* Python
+* Pandas
+* Scikit-learn
+
+**Result:**
+The Logistic Regression model successfully classified URLs into legitimate and malicious categories.
